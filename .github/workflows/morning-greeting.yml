@@ -27,8 +27,8 @@ jobs:
             const issue = await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: `@claude Morning greeting for ${date}`,
-              body: 'good morning'
+              title: `Morning greeting for ${date}`,
+              body: '@claude good morning'
             });
             
             console.log(`Created issue #${issue.data.number}`);
